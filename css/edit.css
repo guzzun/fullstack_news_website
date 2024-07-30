@@ -1,0 +1,106 @@
+.edit_message {
+	color: var(--accent);
+	font-size: 16px;
+}
+
+.edit_form {
+	width: 94%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.form_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	padding-bottom: 15px;
+	border-bottom: 2px solid var(--secundary-text-color);
+}
+
+.article_nav {
+	display: flex;
+}
+
+.form_title i {
+	font-size: 22px;
+	margin-right: 15px;
+	color: var(--text-color);
+	transition: color .2s linear;
+}
+
+.form_title i:hover {
+	color: var(--secundary-text-color);
+}
+
+/* edit form */
+.edit_form input,
+.edit_form textarea {
+	word-wrap: break-word;
+	padding: 5px;
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	margin-top: 10px;
+	color: var(--text-color);
+	border-radius: 4px;
+	border: 1px solid var(--text-color);
+	background-color: var(--ternary);
+	transition: background-color .3s linear;
+}
+
+.edit_form input[type=file] {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
+
+.edit_form textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
+.textarea_height {
+	display: block;
+	min-height: 50vh;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+}
+
+.edit_form textarea:focus,
+.edit_form input:focus {
+	color: var(--primary);
+	background-color: var(--text-color);
+}
+
+.edit_form input[type=file]:focus {
+	background-color: transparent;
+	color: var(--accent);
+}
+
+.edit_form textarea::placeholder,
+.edit_form input::placeholder {
+	color: var(--text-color);
+}
+
+
+.edit_form input[type=submit] {
+	background-color: var(--accent);
+	color: var(--primary);
+	padding: 10px;
+	border: none;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.edit_form input[type=submit]:hover {
+	cursor: pointer;
+	transition: .3s ease;
+	background-color: var(--accent);
+	color: var(--primary);
+}

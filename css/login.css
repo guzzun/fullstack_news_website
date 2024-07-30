@@ -1,0 +1,113 @@
+.auth {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 10px;
+    color: white;
+}
+
+.auth_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+.auth_header h1 {
+    color: var(--text-color);
+}
+
+.auth_header i {
+    background-color: var(--primary);
+    color: var(--text-color);
+    padding: 5px 10px;
+    font-size: 31px;
+}
+
+.back_btn:hover {
+    transform: rotate(180deg);
+}
+
+.auth_header img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+.auth_inner {
+    padding: 16px 16px 0;
+}
+
+.auth_inner input {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    margin: 5px 0 15px 0;
+    border-radius: 3px;
+    display: inline-block;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    background-color: var(--ternary);
+    transition: background-color .3s linear;
+}
+
+.auth_inner input:focus {
+    outline: none;
+    color: var(--primary);
+    background-color: var(--text-color);
+}
+
+.auth_inner input::placeholder {
+    color: var(--text-color);
+}
+
+.auth_inner input:focus::placeholder {
+    color: var(--secondary);
+}
+
+.auth_inner .message {
+    text-align: center;
+    display: block;
+    margin: 7px auto;
+    opacity: 1;
+    color: var(--accent);
+    transition: opacity 1s ease, display 0s 1s;
+}
+
+.auth_inner input[type=submit],
+.register_btn {
+    padding: 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: var(--dark-text-color);
+    background-color: var(--accent);
+    transition: opacity .1s ease, display 0s 1s;
+}
+
+.auth_inner input[type=submit]:hover,
+.register_btn:hover {
+    opacity: 1;
+}
+
+.auth_footer a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.auth_footer {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+@media (max-width: 450px) {
+
+    .auth_inner input {
+        font-size: 16px;
+    }
+}
